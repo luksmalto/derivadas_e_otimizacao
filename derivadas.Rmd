@@ -16,7 +16,7 @@ library(Deriv) # Capaz de realizar derivadas e integrais
 ```{r derivada}
 
 # Define the function
-f <- function(x) x^2
+f <- function(x) (b*x)/(b+2*x)
 
 # Calculate the symbolic derivative
 derivada <- Deriv(f, "x")
@@ -24,11 +24,11 @@ derivada <- Deriv(f, "x")
 # Exiba a derivada
 derivada
 
+plot(f)
 plot(derivada)
 
 # Derivada para um valor
 derivada(2)
-
 ```
 
 
