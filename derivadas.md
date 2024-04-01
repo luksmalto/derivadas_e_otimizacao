@@ -52,7 +52,7 @@ derivada(0)
 ```
 
 ```r
-x_vals <- seq(-100, 100, length.out = 100)
+x_vals <- seq(-10, 10, length.out = 100)
 
 # Calcula os valores das funções e derivadas para os valores de x
 f_vals <- f(x_vals)
