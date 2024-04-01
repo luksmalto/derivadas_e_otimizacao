@@ -1,0 +1,34 @@
+---
+title: "Derivadas e Integrais"
+author: "Lucas Maltoni"
+date: "2024-04-01"
+output: 
+  html_document: 
+    keep_md: true
+---
+
+
+```{r pacotes}
+library(Deriv) # Capaz de realizar derivadas e integrais
+
+```
+
+```{r derivada}
+
+# Define the function
+f <- function(x) x^2
+
+# Calculate the symbolic derivative
+derivada <- Deriv(f, "x")
+
+# Exiba a derivada
+derivada
+
+plot(derivada)
+
+# Derivada para um valor
+derivada(2)
+
+```
+
+
