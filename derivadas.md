@@ -43,7 +43,7 @@ derivada
 ```
 
 ```r
-x_vals <- seq(-10, 100, length.out = 500) # Pontos que serão plotados no gráfico!!!!! varia para diferentes funções
+x_vals <- seq(-100, 100, length.out = 500) # Pontos que serão plotados no gráfico!!!!! varia para diferentes funções
 
 # Calcula os valores das funções e derivadas para os valores de x
 f_vals <- f(x_vals)
@@ -52,16 +52,12 @@ derivada_vals <- eval(derivada(x_vals))
 # Valores de X com derivada igual a zero
 
 derivada_em_x <- function(x) eval(derivada(x))
-zeros_derivada <- optimize(derivada_em_x, c(-3, 1))
-zeros_derivada
+zeros_derivada <- optimize(derivada_em_x, c(-100, 100), maximum = FALSE)
+zeros_derivada$minimum
 ```
 
 ```
-## $minimum
 ## [1] -0.6666667
-## 
-## $objective
-## [1] -0.3333333
 ```
 
 ```r
