@@ -11,18 +11,11 @@ output:
 
 ```r
 library(Deriv) # Capaz de realizar derivadas e integrais
-```
-
-```
-## Warning: package 'Deriv' was built under R version 4.2.3
-```
-
-```r
 library(ggplot2)
 ```
 
 ```
-## Warning: package 'ggplot2' was built under R version 4.3.3
+## Warning: package 'ggplot2' was built under R version 4.2.3
 ```
 
 
@@ -85,6 +78,6 @@ grafico <- ggplot(dados, aes(x)) +
 print(grafico)
 ```
 
-![](derivadas_files/figure-html/derivada-1.png)<!-- -->
+![](README_files/figure-html/derivada-1.png)<!-- -->
 
 
